@@ -3,7 +3,7 @@ In this repository I have created a pipeline to help aid a bookseller with daily
 <br>
 ## Final Table Structure
 - book_id (generated) PK int
-- book_name string
+- title string
 - author string
 - genre string
 - publishing_year int
@@ -12,6 +12,7 @@ In this repository I have created a pipeline to help aid a bookseller with daily
 - units_sold int
 - gross_sales real
 - publisher_revenue real
+- sales_price real
 - sales_rank int (generated)
 - net_sales (generated)
 - ingestion_date (generated) timestamp
