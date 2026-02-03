@@ -16,7 +16,7 @@ def transform(ingestion_df, source_file):
     transform_df['publishing_year'] = transform_df['publishing_year'].astype(int)
 
     ##Generating some needed columns
-    transform_df.insert(0, 'book_id', range(1, len(transform_df) + 1))
+    transform_df.insert(0, 'book_id', range(1, len(transform_df) + 1)) ##May want to remove later when migrating to postgres, but good to have for now
     transform_df['sales_rank'] = transform_df['units_sold'].rank(method='dense', ascending=False).astype(int)
     transform_df['company_revenue'] = round(((transform_df['sale_price'] * transform_df['units_sold']) - transform_df['publisher_revenue']),2)
 
