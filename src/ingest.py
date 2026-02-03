@@ -10,7 +10,6 @@ rows_in = len(df_ingest)
 ##Removing unneccessary columns and columns we should be creating ourselves later
 df_ingest.drop(columns=['language_code', 'index', 'sales rank', 'Author_rating'], inplace=True)
 
-print(df_ingest.shape)
 
 ##Ensuring columns are in the correct name convention for later work
 df_ingest.rename(columns={'Publisher ':'publisher', 'Book Name': 'title', 'Publishing Year':'publishing_year', 'Author':'author',
@@ -19,6 +18,5 @@ df_ingest.rename(columns={'Publisher ':'publisher', 'Book Name': 'title', 'Publi
  
 rows_out = len(df_ingest)
 
+##Creating Logs for Database table
 log_df = pd.DataFrame({'rows_in': [rows_in], 'rows_out': [rows_out], 'source_file': [source_file], 'ingestion_timestamp':[dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')]})
-
-print(log_df.head())
