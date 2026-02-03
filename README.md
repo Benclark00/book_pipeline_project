@@ -13,8 +13,8 @@ In this repository I have created a pipeline to help aid a bookseller with daily
 - gross_sales real
 - publisher_revenue real
 - sales_price real
-- sales_rank int (generated)
-- net_sales (generated)
+- sales_rank (generated) int
+- company revenue (generated) real
 - ingestion_date (generated) timestamp
 
 The original dataset is from Kaggle here is a link to the [dataset](https://www.kaggle.com/datasets/thedevastator/books-sales-and-ratings) if you are interested in utilizing it in your own projects.
