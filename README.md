@@ -16,4 +16,4 @@ In this repository I have created a pipeline to help aid a bookseller with daily
 - net_sales (generated)
 - ingestion_date (generated) timestamp
 <br>
-The original dataset is from Kaggle here is a link to the [dataset](https://www.kaggle.com/datasets/thedevastator/books-sales-and-ratings?resource=download) if you are interested in utilizing it in your own projects.
+The original dataset is from Kaggle here is a link to the [dataset](https://www.kaggle.com/datasets/thedevastator/books-sales-and-ratings?resource) if you are interested in utilizing it in your own projects.
